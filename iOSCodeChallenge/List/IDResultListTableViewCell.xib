@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,14 +34,30 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51R-Jr-d2T" customClass="StarButton" customModule="iOSCodeChallenge" customModuleProvider="target">
+                        <rect key="frame" x="354" y="258.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1HV-ze-lyN"/>
+                            <constraint firstAttribute="height" constant="40" id="GOA-ai-BGG"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="star" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                        </state>
+                        <connections>
+                            <action selector="isFavouriteButtonPressed:" destination="OBf-45-9BQ" eventType="touchUpInside" id="Uf9-49-hNa"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="xsu-se-s8n" firstAttribute="top" secondItem="51R-Jr-d2T" secondAttribute="bottom" constant="20" id="3Pq-Ei-BOQ"/>
                     <constraint firstItem="2VF-Qu-uWN" firstAttribute="top" secondItem="JfE-Qf-TRv" secondAttribute="top" id="7Mg-lk-KeC"/>
                     <constraint firstAttribute="trailing" secondItem="2VF-Qu-uWN" secondAttribute="trailing" id="9Tu-8q-GPn"/>
                     <constraint firstItem="xsu-se-s8n" firstAttribute="top" secondItem="2VF-Qu-uWN" secondAttribute="bottom" constant="8" id="Mdo-Cd-A4c"/>
                     <constraint firstAttribute="trailing" secondItem="xsu-se-s8n" secondAttribute="trailing" constant="16" id="SzF-6j-1Rr"/>
                     <constraint firstItem="hZG-u5-SsM" firstAttribute="top" secondItem="xsu-se-s8n" secondAttribute="bottom" constant="4" id="UCk-Kg-4Tx"/>
                     <constraint firstItem="hZG-u5-SsM" firstAttribute="trailing" secondItem="xsu-se-s8n" secondAttribute="trailing" id="cEm-tc-BBW"/>
+                    <constraint firstAttribute="trailing" secondItem="51R-Jr-d2T" secondAttribute="trailing" constant="20" id="cdL-VS-Y1w"/>
                     <constraint firstItem="xsu-se-s8n" firstAttribute="leading" secondItem="JfE-Qf-TRv" secondAttribute="leading" constant="16" id="kSH-Lq-3Wc"/>
                     <constraint firstItem="2VF-Qu-uWN" firstAttribute="leading" secondItem="JfE-Qf-TRv" secondAttribute="leading" id="lqM-S0-9ok"/>
                     <constraint firstItem="hZG-u5-SsM" firstAttribute="leading" secondItem="xsu-se-s8n" secondAttribute="leading" id="q0q-xJ-YpS"/>
@@ -48,6 +65,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="isFavouriteButton" destination="51R-Jr-d2T" id="2x2-oT-zKu"/>
                 <outlet property="photo" destination="2VF-Qu-uWN" id="lMU-B2-A28"/>
                 <outlet property="subtitleLabel" destination="hZG-u5-SsM" id="F8c-OZ-Fvs"/>
                 <outlet property="titleLabel" destination="xsu-se-s8n" id="YTz-Y8-BTn"/>
@@ -55,4 +73,7 @@
             <point key="canvasLocation" x="-565.21739130434787" y="10.379464285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
 </document>

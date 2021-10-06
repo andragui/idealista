@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  iOSCodeChallenge
+
+  Created by Andres Aguirre Juarez on 6/10/21.
+  
+*/
+
+"welcome_screen_title" = "Bienvenido";
+"on_sale_flat" = "Apartment for sale";
+"on_rent_flat" = "Apartment for rent";
+"on_sale_penthouse" = "Penthouse for sale";
+"on_rent_penthouse" = "Penthouse for rent";
+"on_sale_studio" = "Studio for sale";
+"on_rent_studio" = "Studio for rent";
+"on_sale_chalet" = "Chalet for sale";
+"on_rent_chalet" = "Chalet for rent";
+"on_sale_duplex" = "Duplex for sale";
+"on_rent_duplex" = "Duplex for rent";
+"by_month" = " per month";

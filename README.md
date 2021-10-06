@@ -17,21 +17,25 @@ The app used UIKit and xibs for render the views and have no dependencies with a
 
 Your task is to **clone** this repository and take into consideration next steps
 
-###### New features to add
+###### New features added
 
-1. Create a detail view and navigate to it from ads list.
+1. Create a detail view and navigate to it from ads list. 
+**Only the detail view is developed under a little architecture**
     The detail URL is in the response of the ad list
-2. Add a new feature to favourite ads
+**To see more photos on the detail screen, tap twice**
+2. Add a new feature to favourite ads 
+**The feature is developed only in local until the listView is refreshed by pullToRefresh**
 
 ###### Some optional tasks to do (bonus):
 
-1. Add pull to refresh to the listing
-2. Localize the app in english
-3. Add some test
-4. Refactor the initial code
-5. Visual improvements
-
-###### Once you've finished
-
-1. Notify by email to rrhh@idealista.com which branch of your repo you want our iOS team analyze or send us the project folder (including the .git)
-2. Have a beer after the work done
+1. Add pull to refresh to the listing **Added**
+2. Localize the app in english **Localized**
+3. Add some test **Didn´t added because of time**
+4. Refactor the initial code 
+**Created some class functions to get information about the property (i.e. flat on rent)**
+**Also created class function to get images**
+**Also created generic class function for retrieve generic objects**
+5. Visual improvements 
+**Added locale currency to show the amount in the current currency** (Obviously the exchange between € and another currency is not developed)
+**Added visual message when the property is on rent (per month indication added)**
+**Added star to know if the property is favourite or not**
